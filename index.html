@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <header>
+     <nav>
+      <div class="logo">
+        photo<span>pi</span>x
+      </div>
+       <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+        </div>
+        <div class="icon">
+            <i class="fa fa-search"></i>
+            <a href="#">Login</a>
+
+        </div>
+     </nav>
+     <section class="h-text">
+        <i class="fa fa-camera" id="camera"></i>
+       <h1  data-aos="fade-up">Capturing the moment that captivate your heart.</h1>  
+       <input type="text" name="" placeholder="seach here..">
+       <button><i class="fa fa-search"></i></button>
+     </section>
+    </header>
+    <section class="filter-gallery">
+    <div class="portfolio-menu">
+   <ul>
+    <li class="active" data-filter="*">All</li>
+    <li data-filter=".nature">Nature</li>
+    <li data-filter=".Fashion">Fashion</li>
+    <li data-filter=".Wedding">Wedding</li>
+   </ul>
+</div>
+<div class="portfolio-item">
+    <div class="item nature"  data-aos="flip-left"  data-aos-offset="100"  data-aos-delay="100">
+        <img src="image/p1.jpg" width="100" height="100">
+    </div>
+    <div class="item Fashion"  data-aos="flip-left"  data-aos-offset="100"  data-aos-delay="200">
+        <img src="image/p2.jpg" width="100" height="100">
+    </div>
+    <div class="item Wedding"  data-aos="flip-left"  data-aos-offset="100"  data-aos-delay="300">
+        <img src="image/p3.jpg" width="100" height="100">
+    </div>
+    <div class="item nature"  data-aos="zoom-in"  data-aos-offset="100"  data-aos-delay="100">
+        <img src="image/p4.jpg" width="100" height="100">
+    </div>
+    <div class="item Fashion"  data-aos="zoom-in"  data-aos-offset="100"  data-aos-delay="200">
+        <img src="image/p5.jpg" width="100" height="100">
+    </div>
+    <div class="item Wedding"  data-aos="zoom-in"  data-aos-offset="100"  data-aos-delay="300">
+        <img src="image/p6.jpg" width="100" height="100">
+    </div>
+    <div class="item nature"  data-aos="zoom-in-up"  data-aos-offset="100"  data-aos-delay="100">
+        <img src="image/p7.jpg" width="100" height="100">
+    </div>
+    <div class="item Fashion"  data-aos="zoom-in-up"  data-aos-offset="100"  data-aos-delay="200">
+        <img src="image/p8.jpg" width="100" height="100">
+    </div>
+    <div class="item Wedding"  data-aos="zoom-in-up  data-aos-offset="100"  data-aos-delay="300">
+        <img src="image/p9.jpg" width="100" height="100">
+    </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> 
+<script type="text/javascript">
+    $('.portfolio-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+  $('.portfolio-menu ul ui').click(function(){
+    $('.portfolio-menu ul ui').removeClass('active');
+    $(this).addClass('active');
+  
+         var selector = $(this).attr ('data-filter');
+         $('.portfolio-item').isotope({
+            filter:selector
+    });
+    return false;
+});
+
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+    </section> 
+    <section class="member">
+    <div class="member-info"   data-aos="zoom-in-up  data-aos-offset="100"  data-aos-delay="100">
+        <h1>our <span>Information</span></h1>
+        <p> What our member says</p>
+
+    </div>
+<div class="member-card"   data-aos="zoom-in-down  data-aos-offset="100"  data-aos-delay="300">
+    <img src="image/member.png">
+    <p>
+        From rajasthan doing well is good for healthy life. It helps our body to fit. it relese stress from our mind. from rajasthan , doing gym  is good for healthy life . its help our body to fit .it release stress from our mind
+
+    </p>
+    <h2>* Maria Sharapova</h2>
+    <img src="image/icon1.png" width="100">
+    <img src="image/icon2.png" width="100">
+    <img src="image/icon3.png" width="100">
+    <img src="image/icon4.png" width="100">
+</div>
+<div class="m-image"   data-aos="zoom-in-up  data-aos-offset="100"  data-aos-delay="100">
+<img src="image/s1.jpg">
+<img src="image/s2.jpg">
+<img src="image/s3.jpg">
+<img src="image/s4.jpg">
+<img src="image/s5.jpg">
+<img src="image/s6.jpg">
+
+</div>
+    </section>
+    <footer>
+        <div class="newsletter" data-aos="fade-up" data-aos-offset="200">
+            <div>
+                <h2>Subscribe our newsletter</h2>
+                <p> we are team non--cynics who truly care for our work.</p>
+
+            </div>
+           <div class="ntext"  data-aos="fade-up-right" data-aos-offset="200">
+          <label>
+          <input type="text" name="" placeholder="Enter your email">
+          <button>Subscribe</button>
+ </label>
+
+           </div>
+         </div>
+         <div class="f-contact"  data-aos="zoom-in-up" data-aos-offset="200">
+            <div>
+                <h1>Information</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusantium qui odio nostrum est qu</p>
+           <i class="fa fa-whatsapp"></i>
+           <i class="fa fa-instagram"></i>
+           <i class="fa fa-telegram"></i>
+           <i class="fa fa-twitter"></i>
+            </div>
+             <div>
+                <h1>Useful links</h1>
+                <p>About us</p>
+                <p>Gallery</p>
+                <p>Blog posts</p>
+                <p>Pricing plans</p>
+             </div>
+             <div>
+                <h1>Useful links</h1>
+                <p>About us</p>
+                <p>Gallery</p>
+                <p>Blog posts</p>
+                <p>Pricing plans</p>
+             </div>
+             <div>
+                <h1>help and support</h1>
+                <p>privacy policy</p>
+                <p>tecnical support</p>
+                <p>Blog posts</p>
+                <p>customer care</p>
+             </div>
+             <div>
+                <h1>help and support</h1>
+                <p>privacy policy</p>
+                <p>tecnical support</p>
+                <p>Blog posts</p>
+                <p>customer care</p>
+             </div>
+         </div>
+    </footer>
+</body>
+</html>
